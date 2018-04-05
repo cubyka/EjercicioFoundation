@@ -58,6 +58,61 @@
       <aside class="column large-3">
         <div class="callout">
           <h4>Búsqueda Avanzada</h4>
+          <form>
+            <div class="row column">
+              <label for="nombre">Por nombre</label>
+              <input type="text" id="nombre" name="nombre" value="">
+            </div>
+            <div class="row column">
+              <label for="referencia">Por referencia</label>
+              <input type="text" id="referencia" name="referencia" aria-describedby="referencia-help" value="">
+              <p class="help-text" id="referencia-help">Número único del producto</p>
+            </div>
+            <div class="row column">
+              <label for="categoria">Por categoría</label>
+              <select class="" id="categoria"name="categoria">
+                <option value="">Hogar</option>
+                <option value="">Salud</option>
+                <option value="">Deporte</option>
+                <option value="">Tecnología</option>
+                <option value="">Accesorios</option>
+                <option value="">Ropa</option>
+                <option value="">Mantenimiento</option>
+              </select>
+            </div>
+            <div class="row column">
+              <fieldset>
+                <legend>Tipo de producto:</legend>
+                <input type="checkbox" id="peno" name="pleno" value="">
+                <label for="nuevo-check">Nuevo</label>
+                <input type="checkbox" id="en-oferta" name="en-oferta" value="">
+                <label for="usado-check">Usado</label>
+              </fieldset>
+            </div>
+            <div class="row column">
+              <fieldset>
+                <legend>Tipo de precio:</legend>
+                <input type="radio" id="nuevo-check" name="nuevo-check" value="">
+                <label for="nuevo-check">Pleno</label>
+                <input type="radio" id="usado-check" name="usado-check" value="">
+                <label for="usado-check">En oferta</label>
+              </fieldset>
+            </div>
+            <div class="row column text-center">
+              <label for="">¿Buscar productos agotados?</label>
+              <div class="switch medium">
+                <input class="switch-input" type="checkbox" id="agotados-switch" name="agotados-switch" value="">
+                <label class="switch-paddle" for="agotados-switch">
+                  <span class="switch-active" aria-hidden="true">Sí</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+            </div>
+            <div class="row column text-center">
+              <hr>
+              <button class="button" type="submit" name="enviar">Buscar <i class="step fi-magnifying-glass"></i></button>
+            </div>
+          </form>
         </div>
       </aside>
       <section class="column large-9">
